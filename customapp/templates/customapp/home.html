@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AbstractBaseUser and CustomUser Creation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        <p>This is an example of a signup form with custom fields based on a model that
+         subclasses the AbstractBaseUser model in Django.
+        </p>
+    
+        <p>Aside from a couple of fields Django always retains for any user (is_active,
+        last_login and password), this option enables you to restrict the fields to whatever
+        you want.
+        </p>
+
+        <form action="" method="POST">
+            {% csrf_token %}
+            <table>
+                <tbody>
+                    {{form.as_table}}
+                </tbody>
+            </table>
+        </form>
+        <p>&nbsp</p>
+        <p><button type="submit">signup</button></p>
+        <script src="" async defer></script>
+    </body>
+</html>
